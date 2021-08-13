@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thack",
+  "name": "T-HACK",
+  "description": "Hack client by TheTetrisDude, made for fun :)",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/TetrisLitHub/T-Hack",
+  "updateUrl": "",
+  "authorList": ["TheTetrisDude"],
+  "credits": "me and some random java and forge tutorials that i dont remember",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
