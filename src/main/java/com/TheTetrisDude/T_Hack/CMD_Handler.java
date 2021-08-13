@@ -1,18 +1,17 @@
 package com.TheTetrisDude.T_Hack;
 
-import net.minecraft.client.Minecraft;
-import net.minecraftforge.client.event.ClientChatReceivedEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+// import net.minecraft.client.gui.screen.Screen;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-public class CMD_Handler {
-    // detects chat that starts with "~", prevents message from sending and interprets as command
-    @SubscribeEvent
-    public void onChat(ClientChatReceivedEvent event) {
-        String msg = event.getMessage().getUnformattedText();
-        if (msg.startsWith("~")) {
-            // EntityPlayer p = Minecraft.getMinecraft().world.getPlayerEntityByName(Minecraft.getMinecraft().player.getName());
-            Minecraft.getMinecraft().player.sendChatMessage("CMD INTERPRETED");
-
-        }
+/*
+@Mixin(Screen.class)
+public class ScreenMixin {
+    @Inject(method="sendMessage(Ljava/lang/String;Z)V",at=@At("HEAD"),cancellable = true)
+    public void sendMessage(String message, boolean toHud, CallbackInfo ci) {
+        System.out.println("User sent "+message+" to the server.");
     }
 }
+*/
