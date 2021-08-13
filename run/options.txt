@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:120
 fboEnable:true
-difficulty:3
+difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:true
@@ -51,7 +51,7 @@ realmsNotifications:true
 enableWeakAttacks:false
 autoJump:true
 narrator:0
-tutorialStep:find_tree
+tutorialStep:none
 key_key.attack:-100
 key_key.use:-99
 key_key.forward:17

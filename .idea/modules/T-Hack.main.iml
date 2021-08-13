@@ -5,12 +5,16 @@
       <configuration>
         <autoDetectTypes>
           <platformType>FORGE</platformType>
+          <platformType>MIXIN</platformType>
           <platformType>MCP</platformType>
         </autoDetectTypes>
       </configuration>
     </facet>
   </component>
   <component name="McpModuleSettings">
-    <option name="srgType" value="SRG" />
+    <option name="mappingFile" value="A:\Forge Mods\T-Hack\build\createMcpToSrg\output.tsrg" />
+    <option name="mcpVersion" value="snapshot_20171003-1.12" />
+    <option name="minecraftVersion" value="1.12.2" />
+    <option name="srgType" value="TSRG" />
   </component>
 </module>

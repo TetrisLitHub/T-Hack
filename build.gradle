@@ -115,3 +115,4 @@ publishing {
         }
     }
 }
+// idea { module { inheritOutputDirs = true } }

@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa6d5eb3-a523-46d9-9429-5d0fc327b5bd" name="Default Changelist" comment="Initial Commit 1">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/CMD_Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/CMD_Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/proxy/ClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/proxy/CommonProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/util/Reference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/thack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/T-Hack.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/T-Hack.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/T-Hack.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/T-Hack.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mixin-0.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/CMD_Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/T_Hack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +61,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="fg_runs" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="T-Hack" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -70,14 +96,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\Forge Mods\T-Hack\src\main\resources" />
+      <recent name="A:\Forge Mods\T-Hack\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Forge Mods\T-Hack\lib" />
       <recent name="A:\Forge Mods\T-Hack" />
     </key>
   </component>
@@ -103,6 +135,11 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.runClient" />
+      <item itemvalue="Application.runServer" />
+      <item itemvalue="Gradle.T-Hack [genIntellijRuns]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.T-Hack [genIntellijRuns]" />
@@ -132,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628841464419</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit 1">
+      <created>1628842020458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628842020458</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +193,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Initial Commit 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
