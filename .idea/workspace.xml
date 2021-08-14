@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa6d5eb3-a523-46d9-9429-5d0fc327b5bd" name="Default Changelist" comment="Initial Commit 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/proxy/ClientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/proxy/CommonProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/util/Reference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/thack.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/T-Hack.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/T-Hack.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/T-Hack.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/T-Hack.test.iml" afterDir="false" />
+    <list default="true" id="aa6d5eb3-a523-46d9-9429-5d0fc327b5bd" name="Default Changelist" comment="Rework Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/Module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/ModuleManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/player/Sprint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/thack/textures/watermark.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mixin-0.8.3.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
@@ -23,9 +19,8 @@
       <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/CMD_Handler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/T_Hack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/util/Reference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/util/Reference.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +104,9 @@
       <recent name="A:\Forge Mods\T-Hack\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Forge Mods\T-Hack\src\main\resources\assets\thack\textures" />
+      <recent name="A:\Forge Mods\T-Hack\src\main\resources\assets\thack" />
+      <recent name="A:\Forge Mods\T-Hack\src\main\resources\assets" />
       <recent name="A:\Forge Mods\T-Hack\lib" />
       <recent name="A:\Forge Mods\T-Hack" />
     </key>
@@ -176,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628842020458</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rework Initial Commit">
+      <created>1628878507815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628878507815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +199,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Initial Commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit 1" />
+    <MESSAGE value="Rework Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rework Initial Commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
