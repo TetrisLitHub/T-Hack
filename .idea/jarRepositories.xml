@@ -26,5 +26,10 @@
       <option name="name" value="maven" />
       <option name="url" value="https://maven.minecraftforge.net/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="lukflug" />
+      <option name="name" value="lukflug" />
+      <option name="url" value="https://lukflug.github.io/maven" />
+    </remote-repository>
   </component>
 </project>

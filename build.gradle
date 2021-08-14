@@ -115,4 +115,20 @@ publishing {
         }
     }
 }
-// idea { module { inheritOutputDirs = true } }
+
+// panel studio import ???
+
+repositories {
+    maven {
+        name = 'lukflug'
+        url = 'https://lukflug.github.io/maven'
+    }
+}
+
+dependencies {
+    compile('com.lukflug:panelstudio:0.1.11')
+}
+
+dependencies {
+    compile('com.lukflug:panelstudio-mc12:0.1.8')
+}
