@@ -4,6 +4,7 @@ import com.TheTetrisDude.T_Hack.module.Module;
 import com.TheTetrisDude.T_Hack.module.ModuleManager;
 import com.TheTetrisDude.T_Hack.proxy.CommonProxy;
 import com.TheTetrisDude.T_Hack.ui.Hud;
+import com.TheTetrisDude.T_Hack.util.Discord;
 import com.TheTetrisDude.T_Hack.util.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
@@ -45,7 +46,7 @@ public class Main {
 
     @EventHandler
     public void PostInit (FMLPostInitializationEvent event) {
-
+        Discord.startRPC();
     }
 
     @SubscribeEvent

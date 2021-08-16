@@ -2,7 +2,8 @@ package com.TheTetrisDude.T_Hack.module;
 
 
 import com.TheTetrisDude.T_Hack.Main;
-import com.TheTetrisDude.T_Hack.module.modules.player.Sprint;
+import com.TheTetrisDude.T_Hack.module.modules.client.DiscordRPC;
+import com.TheTetrisDude.T_Hack.module.modules.player.RickAura;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,16 @@ public class ModuleManager {
 
     public ModuleManager() {
         (modules = new ArrayList<>()).clear();
-        // player hacks
-        this.modules.add(new Sprint());
+        // client
+        this.modules.add(new DiscordRPC());
+        // exploits
+
+        // player
+        this.modules.add(new RickAura());
+        // pvp
+
+        // render
+
     }
 
     public Module getModule (String name) {

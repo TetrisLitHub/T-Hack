@@ -7,7 +7,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -42,7 +41,7 @@ public class Hud extends Gui {
             int y = 2;
             final int[] counter = {1};
             for(Module mod : Main.moduleManager.getModuleList()) {
-                if(!mod.getName().equalsIgnoreCase("TabGui") && mod.isToggled()) {
+                if(!mod.getName().equalsIgnoreCase("ClickGui") && !mod.getName().equalsIgnoreCase("DiscordRPC") && mod.isToggled()) {
                     fr.drawStringWithShadow(mod.getName(), sr.getScaledWidth() - fr.getStringWidth(mod.getName()) - 2, y, rainbow(counter[0] * 300));
                     y += fr.FONT_HEIGHT;
                     counter[0]++;

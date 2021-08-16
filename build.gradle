@@ -116,19 +116,10 @@ publishing {
     }
 }
 
-// panel studio import ???
-
+// add DiscordRPC
 repositories {
-    maven {
-        name = 'lukflug'
-        url = 'https://lukflug.github.io/maven'
-    }
+    jcenter()
 }
-
 dependencies {
-    compile('com.lukflug:panelstudio:0.1.11')
-}
-
-dependencies {
-    compile('com.lukflug:panelstudio-mc12:0.1.8')
+    compile 'club.minnced:java-discord-rpc:2.0.2'
 }
