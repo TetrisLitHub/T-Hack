@@ -2,6 +2,7 @@ package com.TheTetrisDude.T_Hack.module;
 
 
 import com.TheTetrisDude.T_Hack.Main;
+import com.TheTetrisDude.T_Hack.module.modules.client.ClickGuiModule;
 import com.TheTetrisDude.T_Hack.module.modules.client.DiscordRPC;
 import com.TheTetrisDude.T_Hack.module.modules.player.RickAura;
 
@@ -16,6 +17,7 @@ public class ModuleManager {
         (modules = new ArrayList<>()).clear();
         // client
         this.modules.add(new DiscordRPC());
+        this.modules.add(new ClickGuiModule());
         // exploits
 
         // player
@@ -37,7 +39,7 @@ public class ModuleManager {
 
     public ArrayList<Module> getModuleList() { return  this.modules; }
 
-    public static List<Module> getModuleByCategory(Category c) {
+    public List<Module> getModuleByCategory(Category c) {
         List<Module> modules = new ArrayList<Module>();
         for (Module m : Main.moduleManager.modules) {
             if(m.getCategory() == c) {

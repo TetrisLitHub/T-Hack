@@ -3,7 +3,7 @@ package com.TheTetrisDude.T_Hack;
 import com.TheTetrisDude.T_Hack.module.Module;
 import com.TheTetrisDude.T_Hack.module.ModuleManager;
 import com.TheTetrisDude.T_Hack.proxy.CommonProxy;
-import com.TheTetrisDude.T_Hack.ui.Hud;
+import com.TheTetrisDude.T_Hack.setting.settings.SettingsManager;
 import com.TheTetrisDude.T_Hack.util.Discord;
 import com.TheTetrisDude.T_Hack.util.Reference;
 import net.minecraft.client.Minecraft;
@@ -23,25 +23,30 @@ import org.lwjgl.input.Keyboard;
 public class Main {
 
     public static ModuleManager moduleManager;
-    public static Hud hud;
+    public SettingsManager settingsManager;
+    // public Hud hud;
+    // public ClickGui clickGui;
 
     @Instance
-    public Main instance;
+    public static Main instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
     @EventHandler
     public void PreInit(FMLPreInitializationEvent event) {
-        System.out.println("T-HACK ACTIVE!");
+        System.out.println("T-Hack loading");
     }
 
     @EventHandler
     public void Init (FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(instance);
-        MinecraftForge.EVENT_BUS.register(new Hud());
+        // MinecraftForge.EVENT_BUS.register(new Hud());
+        // MinecraftForge.EVENT_BUS.register(new ClickGui());
+        settingsManager = new SettingsManager();
         moduleManager = new ModuleManager();
-        hud = new Hud();
+        // hud = new Hud();
+        // clickGui = new ClickGui();
     }
 
     @EventHandler

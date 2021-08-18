@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa6d5eb3-a523-46d9-9429-5d0fc327b5bd" name="Default Changelist" comment="Base + Render">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/discord-rpc-release-v3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/java-discord-rpc-2.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/client/DiscordRPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/util/Discord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="aa6d5eb3-a523-46d9-9429-5d0fc327b5bd" name="Default Changelist" comment="Discord integration, minor changes">
+      <change afterPath="$PROJECT_DIR$/mixinJAR/mixin-0.8.4-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/gui/ClickGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/MixinLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/mixins/MixinGuiMainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/client/ClickGuiModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/Setting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingBoolean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mixins.T-Hack.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
@@ -21,11 +26,9 @@
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/ModuleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/ModuleManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/player/Sprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/player/RickAura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/ui/ClickGui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/ui/Hud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/ui/Hud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/thack.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/thack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/ui/Hud.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,23 +108,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mixinJAR/mixin-0.8.4-SNAPSHOT.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\Forge Mods\T-Hack\mixinJAR" />
       <recent name="A:\Forge Mods\T-Hack\src\main\resources" />
       <recent name="A:\Forge Mods\T-Hack\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="A:\Forge Mods\T-Hack\libs" />
+      <recent name="A:\Forge Mods\T-Hack\mixinJAR" />
       <recent name="A:\Forge Mods\T-Hack\src\main\resources" />
+      <recent name="A:\Forge Mods\T-Hack\libs" />
       <recent name="A:\Forge Mods\T-Hack\src\main\resources\textures" />
       <recent name="A:\Forge Mods\T-Hack\src\main\resources\assets\thack\textures" />
-      <recent name="A:\Forge Mods\T-Hack\src\main\resources\assets\thack" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -208,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628984634486</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Discord integration, minor changes">
+      <created>1629133681037</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629133681037</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +240,8 @@
     <MESSAGE value="Rework Initial Commit" />
     <MESSAGE value="Base" />
     <MESSAGE value="Base + Render" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base + Render" />
+    <MESSAGE value="Discord integration, minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Discord integration, minor changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

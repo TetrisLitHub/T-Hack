@@ -3,13 +3,20 @@ buildscript {
         maven { url = 'https://files.minecraftforge.net/maven' }
         jcenter()
         mavenCentral()
+        maven { url = "http://files.minecraftforge.net/maven" }
+        maven {
+            name = 'SpongePowered'
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
+        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
-        
+
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
@@ -123,3 +130,23 @@ repositories {
 dependencies {
     compile 'club.minnced:java-discord-rpc:2.0.2'
 }
+
+// add mixin
+/*
+buildscript {
+    repositories {
+        maven {
+            name = 'SpongePowered'
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
+        }
+    }
+    dependencies {
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+apply plugin: 'org.spongepowered.mixin'
+mixin {
+    add sourceSets.main, "mixins.T-Hack.refmap.json"
+    defaultObfuscationEnv "searge"
+}
+*/
