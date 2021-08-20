@@ -2,9 +2,11 @@ package com.TheTetrisDude.T_Hack.module;
 
 
 import com.TheTetrisDude.T_Hack.Main;
-import com.TheTetrisDude.T_Hack.module.modules.client.ClickGuiModule;
-import com.TheTetrisDude.T_Hack.module.modules.client.DiscordRPC;
-import com.TheTetrisDude.T_Hack.module.modules.player.RickAura;
+import com.TheTetrisDude.T_Hack.module.modules.client.*;
+import com.TheTetrisDude.T_Hack.module.modules.exploits.*;
+import com.TheTetrisDude.T_Hack.module.modules.player.*;
+import com.TheTetrisDude.T_Hack.module.modules.pvp.Criticals;
+import com.TheTetrisDude.T_Hack.module.modules.render.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,13 +21,15 @@ public class ModuleManager {
         this.modules.add(new DiscordRPC());
         this.modules.add(new ClickGuiModule());
         // exploits
-
-        // player
         this.modules.add(new RickAura());
+        // player
+        this.modules.add(new Sprint());
+        this.modules.add(new Step());
+        this.modules.add(new Velocity());
         // pvp
-
+        this.modules.add(new Criticals());
         // render
-
+        this.modules.add(new FullBright());
     }
 
     public Module getModule (String name) {

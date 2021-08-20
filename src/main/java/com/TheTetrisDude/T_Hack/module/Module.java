@@ -55,7 +55,7 @@ public class Module {
     }
 
     public SettingMode register(String name, ArrayList<String> values, String value) {
-        SettingMode set = new SettingMode(name, this, values, value);
+        SettingMode set = new SettingMode(name, this, value, values);
         Main.instance.settingsManager.settings.add(set);
         return set;
     }

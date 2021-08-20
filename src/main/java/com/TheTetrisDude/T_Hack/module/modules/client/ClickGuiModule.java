@@ -8,12 +8,12 @@ import org.lwjgl.input.Keyboard;
 
 public class ClickGuiModule extends Module {
     public ClickGuiModule() {
-        super("ClickGui", "Opens the GUI interface of the client", Category.CLIENT);
+        super("ClickGui", "GUI interface of the client", Category.CLIENT);
         this.setKey(Keyboard.KEY_RSHIFT);
     }
 
     public void onEnable() {
-        // Minecraft.getMinecraft().displayGuiScreen(Main.instance.clickGui);
+        Minecraft.getMinecraft().displayGuiScreen(Main.instance.clickGui);
         toggle();
     }
 

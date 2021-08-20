@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mixinJAR">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/mixinJAR" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/mixinJAR" recursive="false" />
+  </library>
+</component>

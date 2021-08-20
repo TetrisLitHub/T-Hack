@@ -10,7 +10,7 @@ public class SettingMode extends Setting {
     public ArrayList<String> values;
     public int index;
 
-    public SettingMode(String name, Module mod, ArrayList<String> values, String value) {
+    public SettingMode(String name, Module mod,  String value, ArrayList<String> values) {
         this.name = name;
         this.mod = mod;
         this.values = values;

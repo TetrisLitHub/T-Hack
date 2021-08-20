@@ -1,11 +1,14 @@
 package com.TheTetrisDude.T_Hack;
 
+import com.TheTetrisDude.T_Hack.gui.ClickGui;
+import com.TheTetrisDude.T_Hack.gui.Hud;
 import com.TheTetrisDude.T_Hack.module.Module;
 import com.TheTetrisDude.T_Hack.module.ModuleManager;
 import com.TheTetrisDude.T_Hack.proxy.CommonProxy;
 import com.TheTetrisDude.T_Hack.setting.settings.SettingsManager;
 import com.TheTetrisDude.T_Hack.util.Discord;
 import com.TheTetrisDude.T_Hack.util.Reference;
+import me.zero.alpine.EventManager;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -24,8 +27,9 @@ public class Main {
 
     public static ModuleManager moduleManager;
     public SettingsManager settingsManager;
-    // public Hud hud;
-    // public ClickGui clickGui;
+    public static EventManager EVENT_BUS = new EventManager();
+    public Hud hud;
+    public ClickGui clickGui;
 
     @Instance
     public static Main instance;
@@ -41,12 +45,12 @@ public class Main {
     @EventHandler
     public void Init (FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(instance);
-        // MinecraftForge.EVENT_BUS.register(new Hud());
-        // MinecraftForge.EVENT_BUS.register(new ClickGui());
+        MinecraftForge.EVENT_BUS.register(new Hud());
         settingsManager = new SettingsManager();
         moduleManager = new ModuleManager();
-        // hud = new Hud();
-        // clickGui = new ClickGui();
+        hud = new Hud();
+        MinecraftForge.EVENT_BUS.register(new ClickGui());
+        clickGui = new ClickGui();
     }
 
     @EventHandler

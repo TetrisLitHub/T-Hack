@@ -4,31 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa6d5eb3-a523-46d9-9429-5d0fc327b5bd" name="Default Changelist" comment="Discord integration, minor changes">
-      <change afterPath="$PROJECT_DIR$/mixinJAR/mixin-0.8.4-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/gui/ClickGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/MixinLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/mixins/MixinGuiMainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/client/ClickGuiModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/Setting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingBoolean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingDouble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingsManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mixins.T-Hack.json" afterDir="false" />
+    <list default="true" id="aa6d5eb3-a523-46d9-9429-5d0fc327b5bd" name="Default Changelist" comment="Mixins added, Settings and SettingsManager added, GUI removed to prepare for overhaul (planning to use PanelStudio libs)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mixinJAR.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/event/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/event/EventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/event/events/NetworkPacketEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/event/events/PacketEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/gui/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/gui/Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/gui/Hud.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/mixins/MixinNetworkManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/player/Sprint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/player/Step.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/player/Velocity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/pvp/Criticals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/render/FullBright.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/T-Hack.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/T-Hack.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/T-Hack.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/T-Hack.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/gui/ClickGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/gui/ClickGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/MixinLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/MixinLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/mixins/MixinGuiMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/mixin/mixins/MixinGuiMainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/ModuleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/ModuleManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/ui/Hud.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/client/ClickGuiModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/client/ClickGuiModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/player/RickAura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/module/modules/exploits/RickAura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TheTetrisDude/T_Hack/setting/settings/SettingMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.T-Hack.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.T-Hack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pack.mcmeta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +126,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -219,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629133681037</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Mixins added, Settings and SettingsManager added, GUI removed to prepare for overhaul (planning to use PanelStudio libs)">
+      <created>1629329574398</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629329574398</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +262,8 @@
     <MESSAGE value="Base" />
     <MESSAGE value="Base + Render" />
     <MESSAGE value="Discord integration, minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Discord integration, minor changes" />
+    <MESSAGE value="Mixins added, Settings and SettingsManager added, GUI removed to prepare for overhaul (planning to use PanelStudio libs)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mixins added, Settings and SettingsManager added, GUI removed to prepare for overhaul (planning to use PanelStudio libs)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

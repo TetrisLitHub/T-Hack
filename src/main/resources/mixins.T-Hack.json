@@ -4,6 +4,7 @@
 "package": "com.TheTetrisDude.T_Hack.mixin.mixins",
 "refmap": "mixins.T-Hack.refmap.json",
 "mixins": [
-
+  "MixinGuiMainMenu",
+  "MixinNetworkManager"
 ]
 }
