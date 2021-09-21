@@ -8,3 +8,12 @@ Sprint : CapsLock
 Velocity : V 
 
 Crits : C 
+
+# Future plans!
+Here are my ideas to implement in the future:
+
+-add configs in the form of json files so you can swap configs easily or save them
+
+-add commands to the mod (prefix ~ in chat)
+
+-add more hacks, replace copy/pasted components of the client with my fully original code
