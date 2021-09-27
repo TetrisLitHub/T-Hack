@@ -14,8 +14,8 @@ Download mod from releases, put it in your MC mods folder or use gradlew build t
 # Future plans!
 Here are my ideas to implement in the future:
 
-- add configs in the form of json files so you can swap configs easily or save them
+- add configs in the form of files so you can swap configs easily or save them (In progress, will be released in T-Hack 0.1.2)
 
-- add commands to the mod (prefix ~ in chat)
+- add commands to the mod (prefix ~ in chat) (In progress, will be released in T-Hack 0.1.2)
 
-- add more hacks, replace copy/pasted components of the client with my fully original code
+- add more hacks (working on Speed hack), replace copy/pasted components of the client with my fully original code
