@@ -3,11 +3,11 @@ Hack client by TheTetrisDude (partially based on tutorials by srgantmoomoo and s
 # Installation
 Download mod from releases, put it in your MC mods folder or use gradlew build to build from source. It's for 1.12.2 forge btw
 # Keybindings
-Sprint : CapsLock 
+- Sprint : CapsLock 
 
-Velocity : V 
+- Velocity : V 
 
-Crits : C 
+- Crits : C 
 
 # Future plans!
 Here are my ideas to implement in the future:
