@@ -20,3 +20,4 @@ Here are my ideas to implement in the future:
 - add commands to the mod (prefix ~ in chat) (In progress, will be released in T-Hack 0.1.2)
 
 - add more hacks (working on Speed hack), replace copy/pasted components of the client with my fully original code
+  - bypassing autoclicker? (Variable CPS to avoid detection?)
