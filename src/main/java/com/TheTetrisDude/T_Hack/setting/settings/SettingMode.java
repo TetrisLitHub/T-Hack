@@ -41,6 +41,9 @@ public class SettingMode extends Setting {
     public void setIndex(int index) {
         this.index = index;
     }
+
+    public boolean is(String mode) { return (this.index == this.values.indexOf(mode)); }
+
     public void increment() {
         index++;
         if(index > values.size() - 1) {

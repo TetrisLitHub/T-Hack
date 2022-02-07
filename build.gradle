@@ -23,7 +23,7 @@ apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.1.0'
+version = '0.2'
 group = 'com.TheTetrisDude.T_Hack' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'T-Hack'
 
@@ -138,6 +138,15 @@ reobf {
     shadowJar {
         //mappingType = 'SEARGE'
         classpath = sourceSets.main.compileClasspath
+    }
+}
+
+
+processResources {
+    inputs.property 'version', project.version
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version
     }
 }
 

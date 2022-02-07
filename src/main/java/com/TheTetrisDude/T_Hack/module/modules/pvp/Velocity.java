@@ -1,5 +1,6 @@
-package com.TheTetrisDude.T_Hack.module.modules.player;
+package com.TheTetrisDude.T_Hack.module.modules.pvp;
 
+import com.TheTetrisDude.T_Hack.Main;
 import com.TheTetrisDude.T_Hack.event.events.PacketEvent;
 import com.TheTetrisDude.T_Hack.module.Category;
 import com.TheTetrisDude.T_Hack.module.Module;
@@ -13,14 +14,17 @@ import org.lwjgl.input.Keyboard;
 public class Velocity extends Module {
 
     public Velocity() {
-        super("Velocity", "Reduces knockback", Category.PLAYER);
+        super("Velocity", "Reduces knockback", Category.PVP);
         this.setKey(Keyboard.KEY_V);
+        Main.EVENT_BUS.subscribe(this);
     }
+
+    private Minecraft mc = Minecraft.getMinecraft();
 
     @EventHandler
     private final Listener<PacketEvent.Receive> receiveListener = new Listener<>(event -> {
-        if (event.getPacket() instanceof SPacketEntityVelocity){
-            if (((SPacketEntityVelocity) event.getPacket()).getEntityID() == Minecraft.getMinecraft().player.getEntityId()) {
+        if (event.getPacket() instanceof SPacketEntityVelocity) {
+            if (((SPacketEntityVelocity) event.getPacket()).getEntityID() == mc.player.getEntityId()) {
                 event.cancel();
             }
         }
@@ -29,4 +33,10 @@ public class Velocity extends Module {
         }
     });
 
+    public void onEnable() {
+        Main.EVENT_BUS.subscribe(this);
+    }
+    public void onDisable() {
+        Main.EVENT_BUS.unsubscribe(this);
+    }
 }

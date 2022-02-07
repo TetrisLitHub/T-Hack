@@ -45,6 +45,7 @@ public class Module {
 
     public void onEnable() {MinecraftForge.EVENT_BUS.register(this);}
     public void onDisable() {MinecraftForge.EVENT_BUS.unregister(this);}
+    public void onUpdate() {} public void onRender() {}
 
     // Register Settings
 

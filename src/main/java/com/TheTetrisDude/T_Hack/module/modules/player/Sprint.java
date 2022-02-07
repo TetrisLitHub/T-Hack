@@ -3,7 +3,6 @@ package com.TheTetrisDude.T_Hack.module.modules.player;
 import com.TheTetrisDude.T_Hack.module.Category;
 import com.TheTetrisDude.T_Hack.module.Module;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.settings.KeyBinding;
 import org.lwjgl.input.Keyboard;
 
 public class Sprint extends Module {
@@ -13,15 +12,10 @@ public class Sprint extends Module {
         this.setKey(Keyboard.KEY_CAPITAL);
     }
 
-    public void onEnable() {
-        if (this.isToggled()) {
-            KeyBinding.setKeyBindState(Minecraft.getMinecraft().gameSettings.keyBindSprint.getKeyCode(), true);
-        }
+    public void onUpdate()  {
+        Minecraft.getMinecraft().player.setSprinting(true);
     }
 
-    public void onDisable() {
-        if (!this.isToggled()) {
-            KeyBinding.setKeyBindState(Minecraft.getMinecraft().gameSettings.keyBindSprint.getKeyCode(), false);
-        }
-    }
 }
+
+// TODO: Fix this module

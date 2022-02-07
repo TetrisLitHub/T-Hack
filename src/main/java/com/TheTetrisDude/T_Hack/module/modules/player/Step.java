@@ -11,7 +11,7 @@ public class Step extends Module {
 
     public Step() {
         super("Step", "allows you to step up more than 1 block", Category.PLAYER);
-        height = this.register("height", 2.5, 0.5, 2.5);
+        height = this.register("height", 3, 0.5, 10);
     }
 
     public void onEnable() {

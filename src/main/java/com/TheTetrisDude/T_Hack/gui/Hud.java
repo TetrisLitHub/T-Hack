@@ -41,7 +41,7 @@ public class Hud extends Gui {
             int y = 2;
             final int[] counter = {1};
             for(Module mod : Main.moduleManager.getModuleList()) {
-                if(!mod.getName().equalsIgnoreCase("DiscordRPC") && mod.isToggled()) {
+                if(!mod.getName().equalsIgnoreCase("DiscordRPC") && mod.isToggled() && Main.configManager.showModList()) {
                     fr.drawStringWithShadow(mod.getName(), sr.getScaledWidth() - fr.getStringWidth(mod.getName()) - 2, y, rainbow(counter[0] * 300));
                     y += fr.FONT_HEIGHT;
                     counter[0]++;
